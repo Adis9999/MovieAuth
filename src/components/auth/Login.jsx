@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 
 const BASE_URL = "https://933b4fca974931db.mokky.dev/auth";
 
-const LoginForm = ({ setToken }) => {
+const Login = ({ setToken }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
@@ -95,4 +95,4 @@ const LoginForm = ({ setToken }) => {
   );
 };
 
-export default LoginForm;
+export default Login;

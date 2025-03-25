@@ -1,9 +1,9 @@
 import { Navigate, Route, Routes } from "react-router";
 import AuthLayout from "../layout/AuthLayout";
-import LoginForm from "../auth/Login";
 import RegistrationForm from "../auth/Register";
 import Movies from "../Movies";
 import { useState, useEffect } from "react";
+import Login from "../Auth/Login";
 
 function AppRoutes() {
   const [token, setToken] = useState(
@@ -35,7 +35,7 @@ function AppRoutes() {
           path="sign-up"
           element={<RegistrationForm setToken={setToken} />}
         />
-        <Route path="sign-in" element={<LoginForm setToken={setToken} />} />
+        <Route path="sign-in" element={<Login setToken={setToken} />} />
       </Route>
 
       <Route
